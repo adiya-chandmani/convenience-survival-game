@@ -1,0 +1,44 @@
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Dependencies
+node_modules/
+
+# Build outputs (common)
+dist/
+build/
+out/
+
+# Framework / bundler caches
+.parcel-cache/
+.vite/
+.next/
+.nuxt/
+.svelte-kit/
+.cache/
+
+# Testing / coverage
+coverage/
+
+# Env files
+.env
+.env.*
+
+# Hosting platforms
+.vercel/
+.netlify/
+
+# Misc
+*.local
