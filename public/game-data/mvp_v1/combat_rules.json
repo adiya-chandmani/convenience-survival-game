@@ -1,0 +1,40 @@
+{
+  "player": {
+    "base": {
+      "maxHp": 130,
+      "moveSpeed": 165,
+      "armor": 0,
+      "iFrameMs": 820,
+      "regenPerSec": 0
+    },
+    "invulnerability": {
+      "shareAcrossDamageSources": true,
+      "sources": ["contact", "ranged_projectile", "boss_skill"]
+    }
+  },
+  "damage": {
+    "armorRule": "flat_subtract_min1",
+    "formula": {
+      "raw": "weaponDamage * damageMul",
+      "afterArmor": "max(1, raw - targetArmor)",
+      "crit": "if rand < critChance then afterArmor * critMul else afterArmor"
+    },
+    "cooldown": {
+      "contactHitCooldownMs": 450,
+      "defaultWeaponHitCooldownMs": 120,
+      "applyHitCooldownTo": ["projectile", "boomerang", "spread", "orbit", "zone", "cone"],
+      "beam": {"hitEveryMs": 70}
+    }
+  },
+  "knockback": {
+    "enabled": true,
+    "diminishPerHit": 0.0,
+    "maxSpeed": 420
+  },
+  "status": {
+    "slow": {
+      "stacking": "min",
+      "minMul": 0.4
+    }
+  }
+}

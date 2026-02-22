@@ -1,0 +1,24 @@
+{
+  "target": {
+    "runDurationSec": 1200,
+    "expectedLevelRangeAtEnd": [45, 65]
+  },
+  "xpCurve": {
+    "model": "piecewise_quadratic",
+    "notes": "Designed to feel Vampire Survivors-like: fast early, slower mid, still climbs late with density.",
+    "xpToNextLevel": {
+      "level1to2": 5,
+      "piecewise": [
+        {"fromLevel": 1, "toLevel": 20, "a": 4.0, "b": 8.0, "c": 6.0},
+        {"fromLevel": 21, "toLevel": 40, "a": 6.0, "b": 16.0, "c": 120.0},
+        {"fromLevel": 41, "toLevel": 120, "a": 8.0, "b": 24.0, "c": 360.0}
+      ],
+      "formula": "xp(level) = round(a*level + b*sqrt(level) + c)"
+    },
+    "globalMul": 0.82
+  },
+  "coinCurve": {
+    "notes": "Coins mainly from elite/boss piles + small trickle from mobs.",
+    "expectedCoinsPerRun": [600, 1400]
+  }
+}

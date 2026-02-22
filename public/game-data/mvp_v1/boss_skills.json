@@ -1,0 +1,81 @@
+[
+  {
+    "id": "shot_fan",
+    "name": "부채꼴 난사",
+    "kind": "projectile_fan",
+    "cooldownMs": 2400,
+    "params": {
+      "shots": 7,
+      "spreadDeg": 78,
+      "projectileSpeed": 300,
+      "damage": 12,
+      "range": 700
+    },
+    "telegraph": {"windupMs": 420, "sfx": "boss_windup", "flash": true}
+  },
+  {
+    "id": "shot_ring",
+    "name": "원형 탄막",
+    "kind": "projectile_ring",
+    "cooldownMs": 4200,
+    "params": {
+      "shots": 16,
+      "projectileSpeed": 260,
+      "damage": 11,
+      "range": 760
+    },
+    "telegraph": {"windupMs": 520, "flash": true}
+  },
+  {
+    "id": "dash",
+    "name": "돌진",
+    "kind": "dash",
+    "cooldownMs": 3400,
+    "params": {
+      "dashSpeed": 520,
+      "dashDurationMs": 420,
+      "damage": 18,
+      "hitboxRadius": 22,
+      "afterSlowMs": 350
+    },
+    "telegraph": {"windupMs": 450, "indicator": "line"}
+  },
+  {
+    "id": "summon_swarm",
+    "name": "군집 소환",
+    "kind": "summon",
+    "cooldownMs": 6200,
+    "params": {
+      "enemyId": "swarmlet",
+      "count": 18,
+      "radius": 260,
+      "staggerMs": 40
+    }
+  },
+  {
+    "id": "summon_tank",
+    "name": "탱커 소환",
+    "kind": "summon",
+    "cooldownMs": 9000,
+    "params": {
+      "enemyId": "tank_customer",
+      "count": 2,
+      "radius": 240,
+      "staggerMs": 120
+    }
+  },
+  {
+    "id": "enrage",
+    "name": "광폭",
+    "kind": "self_buff",
+    "cooldownMs": 999999,
+    "params": {
+      "onceAtHpPct": 0.35,
+      "durationMs": 999999,
+      "speedMul": 1.12,
+      "damageMul": 1.15,
+      "spawnsPerSecMul": 1.15
+    },
+    "telegraph": {"windupMs": 700, "banner": "광폭!"}
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "store_infinite",
+    "name": "야간 편의점(무한)",
+    "theme": "store",
+    "runDurationSec": 1200,
+    "bossSchedule": [
+      {"timeSec": 300, "type": "elite_wave", "reward": "chest"},
+      {"timeSec": 600, "type": "boss", "enemyId": "boss_midnight_manager", "reward": "chest"},
+      {"timeSec": 900, "type": "elite_wave", "reward": "chest"},
+      {"timeSec": 1200, "type": "boss_final", "enemyId": "boss_midnight_manager", "reward": "chest", "clearOnKill": true}
+    ],
+    "infiniteMap": {
+      "tileSize": 32,
+      "chunkTiles": 16,
+      "biome": "store_aisles",
+      "decorDensity": 0.22,
+      "solidObstacleChance": 0.06
+    },
+    "spawnTableId": "store_night_01"
+  }
+]

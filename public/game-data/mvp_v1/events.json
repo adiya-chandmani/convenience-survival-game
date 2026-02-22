@@ -1,0 +1,56 @@
+[
+  {
+    "id": "event_05_elite_wave",
+    "timeSec": 300,
+    "kind": "elite_wave",
+    "durationSec": 18,
+    "ui": {"banner": "수상한 기운… 엘리트 등장!"},
+    "effects": {
+      "spawnOverrides": {
+        "spawnsPerSecMul": 1.25,
+        "forceElite": {"enemyId": "elite_insomniac", "count": 1}
+      },
+      "reward": {"chest": {"guaranteed": true, "rarityBias": "rare"}}
+    }
+  },
+  {
+    "id": "event_10_boss",
+    "timeSec": 600,
+    "kind": "boss",
+    "ui": {"banner": "야간 점장 출근"},
+    "spawn": {
+      "enemyId": "boss_midnight_manager",
+      "arena": {"lockSpawnsSec": 6, "extraSpawnsPerSecMul": 0.6}
+    },
+    "reward": {"chest": {"guaranteed": true, "rarityBias": "epic"}}
+  },
+  {
+    "id": "event_15_elite_wave",
+    "timeSec": 900,
+    "kind": "elite_wave",
+    "durationSec": 22,
+    "ui": {"banner": "야식 손님들 광기"},
+    "effects": {
+      "spawnOverrides": {
+        "spawnsPerSecMul": 1.45,
+        "forceElite": {"enemyId": "elite_insomniac", "count": 2}
+      }
+    },
+    "reward": {"chest": {"guaranteed": true, "rarityBias": "epic"}}
+  },
+  {
+    "id": "event_20_final_boss",
+    "timeSec": 1200,
+    "kind": "boss_final",
+    "ui": {"banner": "최종: 야간 점장(광폭)"},
+    "spawn": {
+      "enemyId": "boss_midnight_manager",
+      "mutators": {"hpMul": 1.35, "damageMul": 1.15, "speedMul": 1.05},
+      "arena": {"lockSpawnsSec": 8, "extraSpawnsPerSecMul": 0.75}
+    },
+    "reward": {
+      "chest": {"guaranteed": true, "rarityBias": "epic"},
+      "clearOnKill": true
+    }
+  }
+]

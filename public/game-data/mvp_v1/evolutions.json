@@ -1,0 +1,16 @@
+[
+  {
+    "id": "evo_espresso_burst",
+    "fromWeapon": "coffee_can_shot",
+    "requires": {"weaponLevel": 8, "passiveId": "energy_drink"},
+    "trigger": "chest",
+    "toWeapon": "espresso_burst"
+  },
+  {
+    "id": "evo_premium_scan_laser",
+    "fromWeapon": "barcode_laser",
+    "requires": {"weaponLevel": 8, "passiveId": "membership_card"},
+    "trigger": "chest",
+    "toWeapon": "premium_scan_laser"
+  }
+]

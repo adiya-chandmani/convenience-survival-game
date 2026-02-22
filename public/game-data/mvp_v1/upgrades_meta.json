@@ -1,0 +1,10 @@
+[
+  {"id": "meta_hp", "name": "시작 HP +10", "maxLevel": 5, "costs": [50, 100, 160, 240, 360], "effect": {"startHpAdd": 10}},
+  {"id": "meta_movespeed", "name": "이동속도 +4%", "maxLevel": 5, "costs": [60, 120, 200, 300, 450], "effect": {"moveSpeedMul": 1.04}},
+  {"id": "meta_damage", "name": "기본 공격력 +5%", "maxLevel": 5, "costs": [80, 160, 260, 390, 580], "effect": {"damageMul": 1.05}},
+  {"id": "meta_xp", "name": "XP 획득 +6%", "maxLevel": 5, "costs": [70, 140, 220, 330, 500], "effect": {"xpGainMul": 1.06}},
+  {"id": "meta_coin", "name": "코인 획득 +8%", "maxLevel": 5, "costs": [90, 180, 290, 440, 660], "effect": {"coinGainMul": 1.08}},
+  {"id": "meta_magnet", "name": "자석 범위 +8%", "maxLevel": 5, "costs": [60, 120, 200, 300, 450], "effect": {"magnetMul": 1.08}},
+  {"id": "meta_revive", "name": "부활(1회)", "maxLevel": 1, "costs": [1200], "effect": {"reviveCountAdd": 1}},
+  {"id": "meta_chest", "name": "상자 희귀도 +", "maxLevel": 3, "costs": [400, 700, 1100], "effect": {"chestRarityAdd": 1}}
+]
