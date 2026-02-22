@@ -1,0 +1,106 @@
+[
+  {
+    "id": "gloves",
+    "name": "장갑",
+    "rarity": "common",
+    "maxLevel": 5,
+    "stats": [
+      {"level": 1, "damageMul": 1.08},
+      {"level": 2, "damageMul": 1.08},
+      {"level": 3, "damageMul": 1.08},
+      {"level": 4, "damageMul": 1.08},
+      {"level": 5, "damageMul": 1.08}
+    ]
+  },
+  {
+    "id": "sneakers",
+    "name": "운동화",
+    "rarity": "common",
+    "maxLevel": 5,
+    "stats": [
+      {"level": 1, "moveSpeedMul": 1.06},
+      {"level": 2, "moveSpeedMul": 1.06},
+      {"level": 3, "moveSpeedMul": 1.06},
+      {"level": 4, "moveSpeedMul": 1.06},
+      {"level": 5, "moveSpeedMul": 1.06}
+    ]
+  },
+  {
+    "id": "energy_drink",
+    "name": "에너지드링크",
+    "rarity": "common",
+    "maxLevel": 5,
+    "stats": [
+      {"level": 1, "attackSpeedMul": 1.08},
+      {"level": 2, "attackSpeedMul": 1.08},
+      {"level": 3, "attackSpeedMul": 1.08},
+      {"level": 4, "attackSpeedMul": 1.08},
+      {"level": 5, "attackSpeedMul": 1.08}
+    ]
+  },
+  {
+    "id": "big_bag",
+    "name": "대형 장바구니",
+    "rarity": "common",
+    "maxLevel": 5,
+    "stats": [
+      {"level": 1, "magnetMul": 1.1},
+      {"level": 2, "magnetMul": 1.1},
+      {"level": 3, "magnetMul": 1.1},
+      {"level": 4, "magnetMul": 1.1},
+      {"level": 5, "magnetMul": 1.1}
+    ]
+  },
+  {
+    "id": "ice_pack",
+    "name": "아이스팩",
+    "rarity": "uncommon",
+    "maxLevel": 5,
+    "stats": [
+      {"level": 1, "cooldownMul": 0.95},
+      {"level": 2, "cooldownMul": 0.95},
+      {"level":  3, "cooldownMul": 0.95},
+      {"level":  4, "cooldownMul": 0.95},
+      {"level":  5, "cooldownMul": 0.95}
+    ]
+  },
+  {
+    "id": "protective_gloves",
+    "name": "보호장갑",
+    "rarity": "common",
+    "maxLevel": 5,
+    "stats": [
+      {"level": 1, "armorAdd": 1},
+      {"level": 2, "armorAdd": 1},
+      {"level":  3, "armorAdd": 1},
+      {"level":  4, "armorAdd": 1},
+      {"level":  5, "armorAdd": 1}
+    ]
+  },
+  {
+    "id": "membership_card",
+    "name": "멤버십 카드",
+    "rarity": "uncommon",
+    "maxLevel": 5,
+    "stats": [
+      {"level": 1, "luckAdd": 8},
+      {"level": 2, "luckAdd": 8},
+      {"level":  3, "luckAdd": 8},
+      {"level":  4, "luckAdd": 8},
+      {"level":  5, "luckAdd": 8}
+    ]
+  },
+  {
+    "id": "night_contract",
+    "name": "야간수당 계약서",
+    "rarity": "uncommon",
+    "maxLevel": 5,
+    "stats": [
+      {"level": 1, "coinGainMul": 1.1},
+      {"level": 2, "coinGainMul": 1.1},
+      {"level":  3, "coinGainMul": 1.1},
+      {"level":  4, "coinGainMul": 1.1},
+      {"level":  5, "coinGainMul": 1.1}
+    ]
+  }
+]

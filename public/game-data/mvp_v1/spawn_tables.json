@@ -1,0 +1,50 @@
+[
+  {
+    "id": "store_night_01",
+    "notes": "Time-based weights; SpawnSystem converts threat->spawns/sec.",
+    "threat": {
+      "baseSpawnsPerSec": 0.7,
+      "spawnsPerSecAt20m": 4.8,
+      "eliteChanceAt20m": 0.06
+    },
+    "segments": [
+      {
+        "fromSec": 0,
+        "toSec": 120,
+        "weights": {"snack_hunter": 1.0, "swarmlet": 0.2}
+      },
+      {
+        "fromSec": 120,
+        "toSec": 300,
+        "weights": {"snack_hunter": 1.0, "swarmlet": 0.5, "runner": 0.35}
+      },
+      {
+        "fromSec": 300,
+        "toSec": 480,
+        "weights": {"snack_hunter": 0.9, "runner": 0.55, "tank_customer": 0.25, "swarmlet": 0.6}
+      },
+      {
+        "fromSec": 480,
+        "toSec": 660,
+        "weights": {"snack_hunter": 0.7, "runner": 0.65, "tank_customer": 0.35, "spitter": 0.3, "swarmlet": 0.6}
+      },
+      {
+        "fromSec": 660,
+        "toSec": 900,
+        "weights": {"runner": 0.8, "tank_customer": 0.45, "spitter": 0.45, "exploder": 0.25, "swarmlet": 0.7}
+      },
+      {
+        "fromSec": 900,
+        "toSec": 1200,
+        "weights": {"runner": 0.7, "tank_customer": 0.65, "spitter": 0.55, "exploder": 0.45, "swarmlet": 0.9}
+      }
+    ],
+    "elite": {
+      "enemyId": "elite_insomniac",
+      "minSec": 180,
+      "cooldownSec": 22
+    },
+    "spawnRing": {"minRadius": 420, "maxRadius": 620},
+    "despawn": {"beyondRadius": 1200}
+  }
+]

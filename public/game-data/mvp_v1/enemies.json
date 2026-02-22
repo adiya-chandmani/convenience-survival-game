@@ -1,0 +1,101 @@
+[
+  {
+    "id": "snack_hunter",
+    "name": "야식 손님(기본)",
+    "kind": "chaser",
+    "size": 14,
+    "hp": 28,
+    "speed": 78,
+    "contactDamage": 8,
+    "xpValue": 1,
+    "coinDropChance": 0.02
+  },
+  {
+    "id": "runner",
+    "name": "달려드는 손님(고속)",
+    "kind": "chaser_fast",
+    "size": 12,
+    "hp": 20,
+    "speed": 118,
+    "contactDamage": 7,
+    "xpValue": 1,
+    "coinDropChance": 0.02
+  },
+  {
+    "id": "tank_customer",
+    "name": "대형 손님(탱커)",
+    "kind": "chaser_tank",
+    "size": 18,
+    "hp": 120,
+    "speed": 52,
+    "contactDamage": 11,
+    "xpValue": 3,
+    "coinDropChance": 0.05
+  },
+  {
+    "id": "spitter",
+    "name": "침뱉는 손님(원거리)",
+    "kind": "ranged",
+    "size": 14,
+    "hp": 60,
+    "speed": 62,
+    "contactDamage": 8,
+    "xpValue": 2,
+    "coinDropChance": 0.03,
+    "ranged": {"cooldownMs": 1700, "projectileSpeed": 260, "damage": 12, "range": 520}
+  },
+  {
+    "id": "exploder",
+    "name": "폭주 손님(자폭)",
+    "kind": "exploder",
+    "size": 14,
+    "hp": 38,
+    "speed": 92,
+    "contactDamage": 0,
+    "xpValue": 2,
+    "coinDropChance": 0.03,
+    "explode": {"radius": 70, "damage": 22, "windupMs": 450}
+  },
+  {
+    "id": "swarmlet",
+    "name": "미니 손님(군집)",
+    "kind": "chaser_swarm",
+    "size": 10,
+    "hp": 12,
+    "speed": 98,
+    "contactDamage": 7,
+    "xpValue": 1,
+    "coinDropChance": 0.01
+  },
+  {
+    "id": "elite_insomniac",
+    "name": "불면 엘리트(엘리트)",
+    "kind": "elite",
+    "size": 18,
+    "hp": 520,
+    "speed": 72,
+    "contactDamage": 14,
+    "xpValue": 18,
+    "coinDropChance": 1.0,
+    "drops": {"chestChance": 0.8, "magnetChance": 0.15, "healChance": 0.2}
+  },
+  {
+    "id": "boss_midnight_manager",
+    "name": "야간 점장(보스)",
+    "kind": "boss",
+    "size": 28,
+    "hp": 5200,
+    "speed": 64,
+    "contactDamage": 18,
+    "xpValue": 120,
+    "coinDropChance": 1.0,
+    "boss": {
+      "phases": [
+        {"hpPct": 0.7, "skills": ["shot_fan", "summon_swarm"]},
+        {"hpPct": 0.35, "skills": ["dash", "shot_ring", "summon_tank"]},
+        {"hpPct": 0.0, "skills": ["enrage", "shot_fan", "dash"]}
+      ],
+      "drops": {"chestCount": 1}
+    }
+  }
+]

@@ -1,0 +1,779 @@
+[
+  {
+    "id": "barcode_laser",
+    "name": "바코드 레이저",
+    "rarity": "common",
+    "kind": "beam",
+    "maxLevel": 8,
+    "tags": [
+      "ranged",
+      "pierce",
+      "line"
+    ],
+    "base": {
+      "damage": 8,
+      "cooldownMs": 1500,
+      "beamDurationMs": 220,
+      "width": 18,
+      "range": 820,
+      "pierce": 999,
+      "knockback": 6
+    },
+    "scales": [
+      {
+        "level": 2,
+        "damageMul": 1.2
+      },
+      {
+        "level": 3,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 4,
+        "widthAdd": 4
+      },
+      {
+        "level": 5,
+        "damageMul": 1.25
+      },
+      {
+        "level": 6,
+        "beamDurationMul": 1.2
+      },
+      {
+        "level": 7,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ],
+    "targeting": {
+      "mode": "facing",
+      "maxAngleDeg": 60,
+      "maxDistance": 9999
+    },
+    "evolvesTo": "premium_scan_laser"
+  },
+  {
+    "id": "boxcutter_boomerang",
+    "name": "택배커터 부메랑",
+    "rarity": "common",
+    "kind": "boomerang",
+    "maxLevel": 8,
+    "tags": [
+      "ranged",
+      "return"
+    ],
+    "base": {
+      "damage": 8,
+      "cooldownMs": 1100,
+      "projectiles": 1,
+      "speed": 520,
+      "range": 320,
+      "pierce": 2,
+      "hitCooldownMs": 140,
+      "knockback": 12
+    },
+    "scales": [
+      {
+        "level": 2,
+        "damageMul": 1.2
+      },
+      {
+        "level": 3,
+        "projectilesAdd": 1
+      },
+      {
+        "level": 4,
+        "rangeAdd": 70
+      },
+      {
+        "level": 5,
+        "damageMul": 1.25
+      },
+      {
+        "level": 6,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 7,
+        "pierceAdd": 1
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ],
+    "targeting": {
+      "mode": "facing",
+      "maxAngleDeg": 70,
+      "maxDistance": 900
+    }
+  },
+  {
+    "id": "coffee_can_shot",
+    "name": "캔커피 샷",
+    "rarity": "common",
+    "kind": "projectile",
+    "maxLevel": 8,
+    "tags": [
+      "ranged",
+      "single"
+    ],
+    "base": {
+      "damage": 10,
+      "cooldownMs": 900,
+      "projectiles": 1,
+      "speed": 560,
+      "pierce": 0,
+      "durationMs": 1200,
+      "range": 560,
+      "knockback": 18,
+      "critChance": 0.0,
+      "critMul": 1.5
+    },
+    "scales": [
+      {
+        "level": 2,
+        "damageMul": 1.25
+      },
+      {
+        "level": 3,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 4,
+        "projectilesAdd": 1
+      },
+      {
+        "level": 5,
+        "damageMul": 1.25
+      },
+      {
+        "level": 6,
+        "pierceAdd": 1
+      },
+      {
+        "level": 7,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ],
+    "targeting": {
+      "mode": "nearest",
+      "maxAngleDeg": 180,
+      "maxDistance": 900
+    },
+    "evolvesTo": "espresso_burst"
+  },
+  {
+    "id": "coupon_rain",
+    "name": "쿠폰비",
+    "rarity": "common",
+    "kind": "zone",
+    "maxLevel": 8,
+    "tags": [
+      "zone",
+      "aoe"
+    ],
+    "base": {
+      "damage": 4,
+      "cooldownMs": 2100,
+      "durationMs": 2600,
+      "radius": 92,
+      "tickMs": 220,
+      "knockback": 0
+    },
+    "scales": [
+      {
+        "level": 2,
+        "radiusAdd": 10
+      },
+      {
+        "level": 3,
+        "tickMsMul": 0.9
+      },
+      {
+        "level": 4,
+        "damageMul": 1.2
+      },
+      {
+        "level": 5,
+        "durationMul": 1.2
+      },
+      {
+        "level": 6,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 7,
+        "radiusAdd": 14
+      },
+      {
+        "level": 8,
+        "damageMul": 1.25
+      }
+    ]
+  },
+  {
+    "id": "ice_cup_slow_field",
+    "name": "얼음컵 슬로우 필드",
+    "rarity": "common",
+    "kind": "zone",
+    "maxLevel": 8,
+    "tags": [
+      "zone",
+      "slow",
+      "control"
+    ],
+    "base": {
+      "damage": 3,
+      "cooldownMs": 2400,
+      "durationMs": 2800,
+      "radius": 84,
+      "tickMs": 250,
+      "slowMul": 0.7,
+      "slowDurationMs": 600
+    },
+    "scales": [
+      {
+        "level": 2,
+        "radiusAdd": 12
+      },
+      {
+        "level": 3,
+        "slowMulMul": 0.9
+      },
+      {
+        "level": 4,
+        "damageMul": 1.25
+      },
+      {
+        "level": 5,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 6,
+        "slowDurationMul": 1.25
+      },
+      {
+        "level": 7,
+        "radiusAdd": 14
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ]
+  },
+  {
+    "id": "mop_spin",
+    "name": "걸레 스핀",
+    "rarity": "common",
+    "kind": "orbit",
+    "maxLevel": 8,
+    "tags": [
+      "melee",
+      "aoe",
+      "orbit"
+    ],
+    "base": {
+      "damage": 6,
+      "cooldownMs": 900,
+      "blades": 1,
+      "radius": 66,
+      "angularSpeedDeg": 260,
+      "hitCooldownMs": 220,
+      "knockback": 12
+    },
+    "scales": [
+      {
+        "level": 2,
+        "radiusAdd": 8
+      },
+      {
+        "level": 3,
+        "damageMul": 1.2
+      },
+      {
+        "level": 4,
+        "bladesAdd": 1
+      },
+      {
+        "level": 5,
+        "damageMul": 1.25
+      },
+      {
+        "level": 6,
+        "angularSpeedMul": 1.2
+      },
+      {
+        "level": 7,
+        "radiusAdd": 10
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ]
+  },
+  {
+    "id": "ramen_steam_wave",
+    "name": "라면 스팀 웨이브",
+    "rarity": "common",
+    "kind": "cone",
+    "maxLevel": 8,
+    "tags": [
+      "melee",
+      "cone",
+      "aoe"
+    ],
+    "base": {
+      "damage": 9,
+      "cooldownMs": 1200,
+      "angleDeg": 90,
+      "range": 160,
+      "tickMs": 120,
+      "ticks": 4,
+      "knockback": 8
+    },
+    "scales": [
+      {
+        "level": 2,
+        "damageMul": 1.2
+      },
+      {
+        "level": 3,
+        "rangeAdd": 22
+      },
+      {
+        "level": 4,
+        "ticksAdd": 1
+      },
+      {
+        "level": 5,
+        "damageMul": 1.25
+      },
+      {
+        "level": 6,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 7,
+        "angleAdd": 20
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ],
+    "targeting": {
+      "mode": "nearest",
+      "maxAngleDeg": 120,
+      "maxDistance": 260
+    }
+  },
+  {
+    "id": "receipt_blade",
+    "name": "영수증 블레이드",
+    "rarity": "common",
+    "kind": "orbit",
+    "maxLevel": 8,
+    "tags": [
+      "melee",
+      "aoe",
+      "orbit"
+    ],
+    "base": {
+      "damage": 7,
+      "cooldownMs": 1100,
+      "blades": 1,
+      "radius": 54,
+      "angularSpeedDeg": 320,
+      "hitCooldownMs": 250,
+      "knockback": 10
+    },
+    "scales": [
+      {
+        "level": 2,
+        "damageMul": 1.2
+      },
+      {
+        "level": 3,
+        "radiusAdd": 10
+      },
+      {
+        "level": 4,
+        "bladesAdd": 1
+      },
+      {
+        "level": 5,
+        "damageMul": 1.25
+      },
+      {
+        "level": 6,
+        "angularSpeedMul": 1.15
+      },
+      {
+        "level": 7,
+        "radiusAdd": 12
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ]
+  },
+  {
+    "id": "stapler_burst",
+    "name": "스테이플러 버스트",
+    "rarity": "common",
+    "kind": "projectile",
+    "maxLevel": 8,
+    "tags": [
+      "ranged",
+      "burst"
+    ],
+    "base": {
+      "damage": 7,
+      "cooldownMs": 1200,
+      "projectiles": 1,
+      "burst": {
+        "shots": 3,
+        "intervalMs": 70
+      },
+      "speed": 640,
+      "pierce": 0,
+      "durationMs": 900,
+      "range": 620,
+      "knockback": 10
+    },
+    "scales": [
+      {
+        "level": 2,
+        "damageMul": 1.2
+      },
+      {
+        "level": 3,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 4,
+        "projectilesAdd": 1
+      },
+      {
+        "level": 5,
+        "damageMul": 1.25
+      },
+      {
+        "level": 6,
+        "pierceAdd": 1
+      },
+      {
+        "level": 7,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ],
+    "targeting": {
+      "mode": "nearest",
+      "maxAngleDeg": 210,
+      "maxDistance": 950
+    }
+  },
+  {
+    "id": "coin_shotgun",
+    "name": "동전 샷건",
+    "rarity": "uncommon",
+    "kind": "spread",
+    "maxLevel": 8,
+    "tags": [
+      "ranged",
+      "burst",
+      "close"
+    ],
+    "base": {
+      "damage": 5,
+      "cooldownMs": 1500,
+      "pellets": 5,
+      "spreadDeg": 36,
+      "speed": 620,
+      "range": 260,
+      "pierce": 0,
+      "knockback": 10
+    },
+    "scales": [
+      {
+        "level": 2,
+        "pelletsAdd": 1
+      },
+      {
+        "level": 3,
+        "damageMul": 1.2
+      },
+      {
+        "level": 4,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 5,
+        "pelletsAdd": 1
+      },
+      {
+        "level": 6,
+        "spreadMul": 0.85
+      },
+      {
+        "level": 7,
+        "damageMul": 1.25
+      },
+      {
+        "level": 8,
+        "pelletsAdd": 2
+      }
+    ],
+    "targeting": {
+      "mode": "nearest",
+      "maxAngleDeg": 160,
+      "maxDistance": 340
+    }
+  },
+  {
+    "id": "detergent_splash",
+    "name": "세제 스플래시",
+    "rarity": "uncommon",
+    "kind": "lob",
+    "maxLevel": 8,
+    "tags": [
+      "aoe",
+      "dot"
+    ],
+    "base": {
+      "damage": 4,
+      "cooldownMs": 1700,
+      "projectiles": 1,
+      "throwRange": 420,
+      "radius": 80,
+      "durationMs": 1400,
+      "tickMs": 200,
+      "knockback": 0
+    },
+    "scales": [
+      {
+        "level": 2,
+        "radiusAdd": 10
+      },
+      {
+        "level": 3,
+        "durationMul": 1.2
+      },
+      {
+        "level": 4,
+        "damageMul": 1.2
+      },
+      {
+        "level": 5,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 6,
+        "projectilesAdd": 1
+      },
+      {
+        "level": 7,
+        "tickMsMul": 0.9
+      },
+      {
+        "level": 8,
+        "damageMul": 1.25
+      }
+    ],
+    "targeting": {
+      "mode": "nearest",
+      "maxAngleDeg": 180,
+      "maxDistance": 520
+    }
+  },
+  {
+    "id": "price_tag_bomb",
+    "name": "가격표 폭탄",
+    "rarity": "uncommon",
+    "kind": "lob",
+    "maxLevel": 8,
+    "tags": [
+      "aoe",
+      "burst"
+    ],
+    "base": {
+      "damage": 12,
+      "cooldownMs": 1900,
+      "projectiles": 1,
+      "throwRange": 460,
+      "radius": 92,
+      "durationMs": 220,
+      "tickMs": 9999,
+      "knockback": 6
+    },
+    "scales": [
+      {
+        "level": 2,
+        "radiusAdd": 10
+      },
+      {
+        "level": 3,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 4,
+        "damageMul": 1.2
+      },
+      {
+        "level": 5,
+        "projectilesAdd": 1
+      },
+      {
+        "level": 6,
+        "damageMul": 1.25
+      },
+      {
+        "level": 7,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ],
+    "targeting": {
+      "mode": "nearest",
+      "maxAngleDeg": 180,
+      "maxDistance": 520
+    }
+  },
+  {
+    "id": "receipt_printer_beam",
+    "name": "영수증 프린터 빔",
+    "rarity": "uncommon",
+    "kind": "beam",
+    "maxLevel": 8,
+    "tags": [
+      "ranged",
+      "pierce",
+      "line"
+    ],
+    "base": {
+      "damage": 10,
+      "cooldownMs": 1700,
+      "beamDurationMs": 260,
+      "width": 22,
+      "range": 860,
+      "pierce": 999,
+      "knockback": 7
+    },
+    "scales": [
+      {
+        "level": 2,
+        "damageMul": 1.2
+      },
+      {
+        "level": 3,
+        "widthAdd": 4
+      },
+      {
+        "level": 4,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 5,
+        "damageMul": 1.25
+      },
+      {
+        "level": 6,
+        "beamDurationMul": 1.2
+      },
+      {
+        "level": 7,
+        "cooldownMul": 0.9
+      },
+      {
+        "level": 8,
+        "damageMul": 1.35
+      }
+    ],
+    "targeting": {
+      "mode": "facing",
+      "maxAngleDeg": 70,
+      "maxDistance": 9999
+    }
+  },
+  {
+    "id": "espresso_burst",
+    "name": "에스프레소 버스트",
+    "rarity": "evolved",
+    "kind": "projectile",
+    "maxLevel": 1,
+    "tags": [
+      "ranged",
+      "burst",
+      "evolved"
+    ],
+    "base": {
+      "damage": 18,
+      "cooldownMs": 750,
+      "projectiles": 3,
+      "burst": {
+        "shots": 2,
+        "intervalMs": 80
+      },
+      "speed": 620,
+      "pierce": 1,
+      "durationMs": 1200,
+      "range": 650,
+      "knockback": 22,
+      "critChance": 0.05,
+      "critMul": 1.7
+    },
+    "targeting": {
+      "mode": "nearest",
+      "maxAngleDeg": 220,
+      "maxDistance": 999
+    }
+  },
+  {
+    "id": "premium_scan_laser",
+    "name": "프리미엄 스캔 레이저",
+    "rarity": "evolved",
+    "kind": "beam",
+    "maxLevel": 1,
+    "tags": [
+      "ranged",
+      "pierce",
+      "evolved"
+    ],
+    "base": {
+      "damage": 14,
+      "cooldownMs": 1100,
+      "beamDurationMs": 380,
+      "width": 26,
+      "range": 980,
+      "pierce": 999,
+      "knockback": 8,
+      "bonus": {
+        "goldOnKillChance": 0.05
+      }
+    },
+    "targeting": {
+      "mode": "facing",
+      "maxAngleDeg": 80,
+      "maxDistance": 9999
+    }
+  }
+]

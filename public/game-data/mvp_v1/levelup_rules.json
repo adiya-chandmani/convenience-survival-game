@@ -1,0 +1,48 @@
+{
+  "selection": {
+    "baseChoices": 3,
+    "pauseGame": true,
+    "reroll": {"enabled": false},
+    "banish": {"enabled": false},
+    "skip": {"enabled": true, "coinCompensation": 0}
+  },
+
+  "slots": {
+    "weapons": 6,
+    "passives": 6,
+    "allowReplaceWhenFull": true,
+    "replaceUI": {"enabled": true, "step": "choose-slot"}
+  },
+
+  "candidatePool": {
+    "weights": {
+      "weapon_new": 1.0,
+      "weapon_upgrade": 1.45,
+      "passive_new": 0.85,
+      "passive_upgrade": 1.25
+    },
+    "whenSlotsFull": {
+      "weapon_new": {"allow": true, "mode": "replace"},
+      "passive_new": {"allow": true, "mode": "replace"}
+    },
+    "rarityWeights": {
+      "common": 0.78,
+      "uncommon": 0.18,
+      "rare": 0.04
+    },
+    "luck": {
+      "stat": "luckAdd",
+      "effect": "shiftCommonToUncommonToRare",
+      "per10LuckShift": 0.03,
+      "capShift": 0.18
+    }
+  },
+
+  "rules": {
+    "noDuplicateNew": true,
+    "allowWeaponUpgradeIfOwned": true,
+    "allowPassiveUpgradeIfOwned": true,
+    "excludeEvolvedFromLevelup": true,
+    "evolutions": {"appearInLevelup": false, "trigger": "chest"}
+  }
+}

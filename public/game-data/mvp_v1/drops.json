@@ -1,0 +1,104 @@
+{
+  "xpGems": {
+    "tiers": [
+      {"id": "xp_1", "value": 1, "radius": 10, "color": "#7CFF7C"},
+      {"id": "xp_5", "value": 5, "radius": 13, "color": "#4CC8FF", "combineThreshold": 8},
+      {"id": "xp_20", "value": 20, "radius": 16, "color": "#C56CFF", "combineThreshold": 12}
+    ],
+    "combine": {
+      "enabled": true,
+      "gridCell": 80,
+      "combineEveryMs": 600,
+      "maxCombinesPerTick": 25
+    },
+    "magnet": {
+      "basePickupRadius": 90,
+      "attractRadiusMul": 2.2,
+      "attractSpeed": 520
+    }
+  },
+
+  "coins": {
+    "baseValue": 1,
+    "pickupRadius": 90,
+    "attractSpeed": 520
+  },
+
+  "consumables": [
+    {
+      "id": "heal_small",
+      "name": "삼각김밥 회복",
+      "kind": "heal",
+      "healFlat": 20,
+      "drop": {"from": ["elite", "boss"], "chance": 0.18}
+    },
+    {
+      "id": "heal_big",
+      "name": "도시락 회복",
+      "kind": "heal",
+      "healPct": 0.35,
+      "drop": {"from": ["boss"], "chance": 0.22}
+    },
+    {
+      "id": "magnet",
+      "name": "자석",
+      "kind": "magnet",
+      "durationMs": 1200,
+      "drop": {"from": ["elite", "boss"], "chance": 0.14}
+    },
+    {
+      "id": "screen_bomb",
+      "name": "소화기(화면 정리)",
+      "kind": "bomb",
+      "damage": 9999,
+      "drop": {"from": ["elite", "boss"], "chance": 0.08}
+    }
+  ],
+
+  "chests": {
+    "sources": {
+      "elite": {"chance": 0.65, "cooldownSec": 22},
+      "boss": {"guaranteed": true}
+    },
+    "rarity": {
+      "baseWeights": {"common": 0.78, "rare": 0.18, "epic": 0.04},
+      "metaChestRarityAdd": {
+        "perLevel": 0.06,
+        "appliesTo": "upgradeWeights",
+        "effect": "shiftCommonToRareToEpic"
+      }
+    },
+    "rollsByRarity": {
+      "common": 1,
+      "rare": 3,
+      "epic": 5
+    },
+    "upgradeRoll": {
+      "pool": "playerOwned",
+      "allowDuplicates": true,
+      "includeEvolutions": true,
+      "evolutionPriority": true,
+      "rarityBias": {
+        "mode": "weight_shift",
+        "presets": {
+          "rare": {"shiftCommonToRare": 0.18, "shiftRareToEpic": 0.03},
+          "epic": {"shiftCommonToRare": 0.28, "shiftRareToEpic": 0.08}
+        }
+      }
+    },
+    "evolution": {
+      "trigger": "chest",
+      "priority": true,
+      "maxPerChest": 1
+    }
+  },
+
+  "economy": {
+    "coins": {
+      "normalEnemyChance": 0.02,
+      "eliteCoinPiles": {"min": 10, "max": 25},
+      "bossCoinPiles": {"min": 35, "max": 65},
+      "coinGainMulFromStats": true
+    }
+  }
+}
